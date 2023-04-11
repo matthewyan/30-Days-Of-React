@@ -46,10 +46,23 @@ if (itCompanies.indexOf('Apple') != -1) {
 }
 
 // Filter out companies which have more than one 'o' without the filter method
+let result1 = itCompanies.filter(e => [...e.matchAll(/[oO]/g)].length >= 2);
+console.log(result1);
 
+for (let index = 0; index < itCompanies.length; index++) {
+    const element = itCompanies[index];
+    let r = [...element.matchAll(/[oO]/g)]
+    if (r.length >= 2) {
+        console.log(element)
+    }
+}
 
 // Sort the array using sort() method
+console.log(itCompanies.sort())
+
 // Reverse the array using reverse() method
+console.log(itCompanies.reverse())
+
 // Slice out the first 3 companies from the array
 // Slice out the last 3 companies from the array
 // Slice out the middle IT company or companies from the array
