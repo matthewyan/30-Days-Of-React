@@ -64,8 +64,23 @@ console.log(itCompanies.sort())
 console.log(itCompanies.reverse())
 
 // Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0, 3))
+
 // Slice out the last 3 companies from the array
+console.log(itCompanies.slice(-3))
+console.log(itCompanies)
+
 // Slice out the middle IT company or companies from the array
+itCompanies.push('Tencent')
+console.log(itCompanies)
+let result2 = itCompanies.filter((e, i) => {
+    if (Math.floor((itCompanies.length-1) / 2) === i || Math.floor(itCompanies.length / 2) === i) {
+        return true;
+    }
+    return false;
+})
+console.log(result2)
+ 
 // Remove the first IT company from the array
 // Remove the middle IT company or companies from the array
 // Remove the last IT company from the array
