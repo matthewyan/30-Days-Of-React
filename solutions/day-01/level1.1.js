@@ -71,7 +71,7 @@ console.log(itCompanies.slice(-3))
 console.log(itCompanies)
 
 // Slice out the middle IT company or companies from the array
-itCompanies.push('Tencent')
+// itCompanies.push('Tencent')
 console.log(itCompanies)
 let result2 = itCompanies.filter((e, i) => {
     if (Math.floor((itCompanies.length-1) / 2) === i || Math.floor(itCompanies.length / 2) === i) {
@@ -82,6 +82,11 @@ let result2 = itCompanies.filter((e, i) => {
 console.log(result2)
  
 // Remove the first IT company from the array
+itCompanies.shift()
+console.log(itCompanies)
+
 // Remove the middle IT company or companies from the array
+
+
 // Remove the last IT company from the array
 // Remove all IT companies
